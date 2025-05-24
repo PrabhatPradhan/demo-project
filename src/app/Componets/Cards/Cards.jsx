@@ -98,7 +98,7 @@ export default function Card() {
 
       {/* Call-to-Action Section */}
       <div className="bg-gray-100 flex items-center justify-center">
-        <div className="bg-[#0e0034] rounded-2xl px-8 py-12 w-full max-w-6xl text-center text-white relative overflow-hidden shadow-lg">
+        <div className="bg-[#0e0034]  mb-10 rounded-2xl px-8 py-12 w-full max-w-6xl text-center text-white relative overflow-hidden shadow-lg">
           {/* Background effects */}
           <div className="absolute inset-0 pointer-events-none select-none">
             <div className="absolute left-6 top-1/3 w-40 h-40 bg-gradient-radial from-purple-400/40 to-transparent rounded-full blur-2xl"></div>
@@ -113,7 +113,7 @@ export default function Card() {
           </h2>
 
           {/* Buttons */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+          <div className="flex flex-col md:flex-row   items-center justify-center gap-4 md:gap-6">
             {/* Call button */}
             <a href="tel:+1234567898" className="block">
               <div className="relative overflow-hidden font-bold py-3 px-6 rounded-full shadow-md group hover:scale-105 transition-transform duration-300 cursor-pointer">

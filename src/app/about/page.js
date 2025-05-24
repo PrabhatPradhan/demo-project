@@ -6,7 +6,8 @@ import Navbar from "../Componets/Navbar/Navbar";
 import EnquiryForm from "../Componets/EnquiryForm/EnquiryForm";
 // import "../about/about.css";
 import Link from "next/link";
-import { FaCheckCircle, FaSmile, FaTrophy } from "react-icons/fa";
+import { FaClock, FaCalendarCheck, FaUsers } from "react-icons/fa";
+ 
 import ServiceCenterCard from "../Componets/ServiceCenterCard/ServiceCenterCard";
 export default function Page() {
   return (
@@ -37,7 +38,7 @@ export default function Page() {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="mb-10">
-            <h3 className="text-red-600 font-semibold text-xl">
+            <h3 className="text-orange-600 font-semibold text-xl">
               OUR INTRODUCTION
             </h3>
             <h2 className="text-4xl font-bold text-gray-800 mt-2">
@@ -162,7 +163,7 @@ export default function Page() {
             </p>
 
             {/* Red Line Decoration */}
-            <div className="mt-6 w-48 h-1 bg-red-600 relative">
+            <div className="mt-6 w-48 h-1 bg-orange-600 relative">
               <div className="w-4 h-4 bg-white rounded-full absolute -right-2 top-1/2 transform -translate-y-1/2"></div>
             </div>
 
@@ -179,7 +180,7 @@ export default function Page() {
           {/* Right Play Button */}
           <div className="relative mt-12 lg:mt-0">
             <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center relative z-10">
-              <div className="text-red-600 text-3xl">▶</div>
+              <div className="text-orange-600 text-3xl">▶</div>
             </div>
             {/* Pulsing Rings */}
             <div className="absolute inset-0 flex items-center justify-center">
@@ -197,7 +198,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <p className="text-red-600 font-semibold text-sm sm:text-base">
+            <p className="text-orange-600 font-semibold text-sm sm:text-base">
               WORKING PROCESS
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mt-2">
@@ -220,14 +221,14 @@ export default function Page() {
                     Maiores harum velit doloremque molestias.
                   </p>
                 </div>
-                <span className="text-red-600 text-5xl sm:text-6xl font-bold">
+                <span className="text-orange-600 text-5xl sm:text-6xl font-bold">
                   1<sup>st</sup>
                 </span>
               </div>
 
               {/* Step 2 */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                <span className="text-red-600 text-5xl sm:text-6xl font-bold order-1 sm:order-none">
+                <span className="text-orange-600 text-5xl sm:text-6xl font-bold order-1 sm:order-none">
                   2<sup>nd</sup>
                 </span>
                 <div className="border p-4 shadow-sm flex-1 min-w-0   hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transform transition-all duration-300 ease-in-out relative">
@@ -252,7 +253,7 @@ export default function Page() {
                     Maiores harum velit doloremque molestias.
                   </p>
                 </div>
-                <span className="text-red-600 text-5xl sm:text-6xl font-bold">
+                <span className="text-orange-600 text-5xl sm:text-6xl font-bold">
                   3<sup>rd</sup>
                 </span>
               </div>
@@ -269,37 +270,67 @@ export default function Page() {
           </div>
 
           {/* Fun Facts Counter */}
-          <div className="overflow-hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center mt-10 border-t border-gray-200 pt-16 bg-white">
+          {/* <div className="overflow-hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center mt-10 border-t border-gray-200 pt-16 bg-white">
             <div className="transition-transform duration-500 hover:scale-105">
               <div className="flex items-center justify-center gap-3 text-5xl md:text-6xl font-extrabold text-gray-900 animate-bounce">
-                <FaCheckCircle className="text-red-500 text-4xl" />
+                <FaCheckCircle className="text-orange-500 text-4xl" />
                 17k
               </div>
-              <p className="text-sm text-red-600 mt-2 font-medium">
+              <p className="text-sm text-orange-600 mt-2 font-medium">
                 Completed Project
               </p>
             </div>
 
             <div className="transition-transform duration-500 hover:scale-105">
               <div className="flex items-center justify-center gap-3 text-5xl md:text-6xl font-extrabold text-gray-900 animate-pulse">
-                <FaSmile className="text-red-500 text-4xl" />
+                <FaSmile className="text-orange-500 text-4xl" />
                 49+
               </div>
-              <p className="text-sm text-red-600 mt-2 font-medium">
+              <p className="text-sm text-orange-600 mt-2 font-medium">
                 Satisfied Clients
               </p>
             </div>
 
             <div className="transition-transform duration-500 hover:scale-105">
               <div className="flex items-center justify-center gap-3 text-5xl md:text-6xl font-extrabold text-gray-900 animate-bounce">
-                <FaTrophy className="text-red-500 text-4xl" />
+                <FaTrophy className="text-orange-500 text-4xl" />
                 2k
               </div>
-              <p className="text-sm text-red-600 mt-2 font-medium">
+              <p className="text-sm text-orange-600 mt-2 font-medium">
                 Awards Winner
               </p>
             </div>
+          </div> */}
+          <div className="py-10 px-6 md:px-2 bg-white">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
+        {/* Box 1 */}
+        <div className="border border-orange-500 p-10 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+          <div className="mb-6 flex justify-center">
+            <FaClock className="text-6xl text-orange-500" />
           </div>
+          <h3 className="text-xl font-bold text-black mb-1">Get Service</h3>
+          <p className="text-lg font-semibold text-black">Within 45 mins</p>
+        </div>
+
+        {/* Box 2 */}
+        <div className="border border-orange-500 p-10 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+          <div className="mb-6 flex justify-center">
+            <FaCalendarCheck className="text-6xl text-orange-500" />
+          </div>
+          <h3 className="text-xl font-bold text-black mb-1">24 Hours Appointment</h3>
+          <p className="text-lg font-semibold text-black">Booking</p>
+        </div>
+
+        {/* Box 3 */}
+        <div className="border border-orange-500 p-10 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+          <div className="mb-6 flex justify-center">
+            <FaUsers className="text-6xl text-orange-500" />
+          </div>
+          <h3 className="text-xl font-bold text-black mb-1">Serve 10,000+</h3>
+          <p className="text-lg font-semibold text-black">Customers</p>
+        </div>
+      </div>
+    </div>
         </div>
       </section>
 
